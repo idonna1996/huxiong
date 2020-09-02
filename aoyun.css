@@ -26,12 +26,21 @@ p, dl, dt, dd, ul {
 .card, .figure {
 	margin: 15px 0;
 }
-.navbar-expand-lg .navbar-nav .nav-link {
+.navbar-expand-lg .navbar-nav  {
 	padding-right: 1.2rem;
 	padding-left: 1.2rem;
 	font-size: 14px;
     opacity: 0.7;
-	
+}
+.nav {
+  opacity: 0.9; 
+}
+ .nav-link {
+	padding-right: 1.2rem;
+	padding-left: 1.2rem;
+	font-size: 14px;
+
+  
 }
 .navbar-brand {
 	font-size: 20px;
@@ -292,7 +301,7 @@ a.page-num:hover, .page-link:hover {
 	display: none;
 }
 .head-sm-height {
-	height: 61px !important;
+	height: 65px !important;
 }
 }
 /*********响应式样式******************/
@@ -1951,3 +1960,33 @@ footer{
 }
 @media screen and (max-width: 1222px) { .none{display:none; }
 }
+  .fodder-box img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all .3s ease-in-out;
+}
+.fodder-box img:hover {
+  transition: all .3s ease-in-out;
+}
+.fodder-box img:after {
+  content: '';
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.fodder-box img:hover {
+  transition: all .3s ease-in-out;
+}
+.jumbotron123 {
+	padding:2rem 1rem;
+	margin-bottom:12rem;
+	background-color:#e9ecef;
+	border-radius:.3rem
+}
+#layer2:hover{background:#708090;}  
